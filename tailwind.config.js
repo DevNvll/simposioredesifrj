@@ -4,6 +4,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      fontFamily: {
+        mono: ["Courier New", "monospace"]
+      },
       colors: {
         primary: {
           100: "#C8F9D0",
