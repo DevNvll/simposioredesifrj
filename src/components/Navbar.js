@@ -38,7 +38,7 @@ export function Navbar({ location, ...props }) {
             <NavItem href="/programacao" label="Programação" />
             <NavItem href="/submissoes" label="Submissões" />
             <NavItem href="/incricoes" label="Pré-Inscrições" />
-            <NavItem href="/contato" label="Fale com a Oganização" />
+            <NavItem href="/contato" label="Fale com a Organização" />
           </ul>
         </div>
       </nav>
