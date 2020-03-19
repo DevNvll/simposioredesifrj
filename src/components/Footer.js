@@ -93,13 +93,11 @@ export function Footer() {
           <h3 className="text-xl font-bold text-white">Nosso Contato</h3>
           <div className="flex items-center justify-start mt-3">
             <i className="p-4 mr-4 bg-white rounded-full fa fa-phone text-primary-700" />
-            <p className="text-base text-gray-400">(21) 98156-6216</p>
+            <p className="text-base text-gray-400">(22) 2622-6216</p>
           </div>
           <div className="flex items-center justify-start mt-3">
             <i className="p-4 mr-4 bg-white rounded-full fa fa-envelope text-primary-700" />
-            <p className="text-base text-gray-400">
-              daviduartebrancol@gmail.com
-            </p>
+            <p className="text-base text-gray-400">redes.cac@ifrj.edu.br</p>
           </div>
           <h3 className="mt-6 text-xl font-bold text-white">Nossas Mídias</h3>
           <div className="flex items-center justify-between w-full mt-3">
@@ -111,9 +109,6 @@ export function Footer() {
             </div>
             <div className="flex items-center justify-start mt-3">
               <i className="flex items-center justify-center w-16 h-16 mr-4 text-3xl bg-white rounded-full fab fa-linkedin-in fa-fw text-primary-700" />
-            </div>
-            <div className="flex items-center justify-start mt-3">
-              <i className="flex items-center justify-center w-16 h-16 mr-4 text-3xl bg-white rounded-full fab fa-github-alt fa-fw text-primary-700" />
             </div>
           </div>
         </div>
