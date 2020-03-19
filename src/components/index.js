@@ -1,0 +1,7 @@
+export { Navbar } from "./Navbar"
+export { Hero } from "./Hero"
+export { Topic } from "./Topic"
+export { MoreTopics } from "./MoreTopics"
+export { Execution } from "./Execution"
+export { Partner } from "./Partner"
+export { Footer } from "./Footer"
