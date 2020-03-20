@@ -23,7 +23,7 @@ export function Topic({
   reversed = false,
   ...props
 }) {
-  const margin = reversed ? "ml-40" : "mr-40"
+  const margin = reversed ? "md:ml-40" : "md:mr-40"
   const img = getImage(image)
   return (
     <div
@@ -32,9 +32,12 @@ export function Topic({
       })}
     >
       <div
-        className={cx("container flex justify-between items-start", {
-          ["flex-row-reverse"]: reversed
-        })}
+        className={cx(
+          "container flex md:flex-row flex-col items-center md:items-start justify-between items-start",
+          {
+            ["md:flex-row-reverse flex-col"]: reversed
+          }
+        )}
       >
         <img
           className={margin}
@@ -42,7 +45,7 @@ export function Topic({
           alt="Topic Icon"
           style={{ width: "400px" }}
         />
-        <div className="flex justify-between items-start flex-col">
+        <div className="flex flex-col items-center justify-between mx-5 mt-4 md:mt-0 md:items-start">
           <h1
             className={cx("font-bold text-4xl", {
               ["text-primary-600"]: !reversed,
@@ -52,16 +55,19 @@ export function Topic({
             {title}
           </h1>
           <p
-            className={cx("mt-8  font-400 text-xl leading-loose", {
-              ["text-gray-900"]: !reversed,
-              ["text-gray-300"]: reversed
-            })}
+            className={cx(
+              "mt-8 font-400 text-xl leading-loose text-center md:text-left",
+              {
+                ["text-gray-900"]: !reversed,
+                ["text-gray-300"]: reversed
+              }
+            )}
           >
             {description}
           </p>
           <button
             className={cx(
-              "mt-8 border-solid border px-10 py-6 rounded-md text-xl ",
+              "mt-8 border-solid border px-10 py-6 rounded-md text-xl text-center md:text-left",
               {
                 ["border-secondary-400 text-secondary-400 hover:bg-secondary-400 hover:text-white"]: !reversed,
                 ["border-gray-300 text-gray-300 hover:bg-primary-400 hover:border-primary-400"]: reversed

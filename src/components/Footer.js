@@ -1,15 +1,15 @@
 export function Footer() {
   return (
     <footer className="flex flex-col items-center justify-center w-full bg-gray-800">
-      <div className="container flex items-start justify-between pt-10 pb-10">
-        <div className="flex flex-col items-start justify-between w-1/4">
-          <div>
+      <div className="container flex flex-col items-center justify-between w-full pt-10 pb-10 md:items-start md:flex-row">
+        <div className="flex flex-col justify-center md:items-start md:w-1/4">
+          <div className="items-center md:items-start">
             <h3 className="text-xl font-bold text-white">
               1º Simpósio de Redes
             </h3>
             <p className="mt-2 text-gray-100">Região dos Lagos</p>
           </div>
-          <div className="mt-6">
+          <div className="items-center md:mt-6 md:items-start">
             <h3 className="mt-4 text-xl font-bold text-white">
               Sobre o Evento
             </h3>
@@ -18,7 +18,7 @@ export function Footer() {
               cidade.
             </p>
           </div>
-          <div className="mt-6">
+          <div className="items-center md:mt-6 md:items-start">
             <h3 className="mt-4 text-xl font-bold text-white">
               Nossa Localização
             </h3>
@@ -28,7 +28,7 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-start justify-between w-1/4">
+        <div className="flex flex-col items-start justify-between md:w-1/4">
           <h3 className="text-xl font-bold text-white">Informações</h3>
           <ul>
             <li className="mt-3">
@@ -58,7 +58,7 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col items-start justify-between w-1/4">
+        <div className="flex flex-col items-start justify-between md:w-1/4">
           <h3 className="text-xl font-bold text-white">
             Comissão Organizadora
           </h3>
@@ -89,7 +89,7 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div className="flex flex-col items-start justify-between w-1/4">
+        <div className="flex flex-col items-start justify-between md:w-1/4">
           <h3 className="text-xl font-bold text-white">Nosso Contato</h3>
           <div className="flex items-center justify-start mt-3">
             <i className="p-4 mr-4 bg-white rounded-full fa fa-phone text-primary-700" />
@@ -114,7 +114,7 @@ export function Footer() {
         </div>
       </div>
       <div className="flex justify-center w-full pt-2 pb-2 bg-gray-900 align-center">
-        <div className="container flex items-center justify-between w-full py-4">
+        <div className="container flex flex-col items-center justify-between w-full py-4 md:flex-row">
           <p className="text-gray-400">
             2020 © Copyright - All Rights Reserved
           </p>

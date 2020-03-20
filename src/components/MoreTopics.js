@@ -5,8 +5,8 @@ import security from "../assets/img/undraw/security.svg"
 export function MoreTopics(props) {
   return (
     <div className="flex justify-center pt-20 pb-20 align-center">
-      <div className="container flex items-center justify-between">
-        <div className="flex flex-col items-center justify-center w-1/3 mr-16">
+      <div className="container flex flex-col items-center justify-between md:flex-row">
+        <div className="flex flex-col items-center justify-center w-full mx-4 md:mr-16 md:w-1/3 ">
           <img
             className="w-64"
             src={education}
@@ -16,14 +16,14 @@ export function MoreTopics(props) {
           <h2 className="mt-10 text-3xl font-bold text-primary-700">
             Redes na Educação
           </h2>
-          <p className="mt-8 text-base leading-loose text-justify text-gray-900">
+          <p className="px-4 mt-8 text-base leading-loose text-justify text-gray-900 md:px-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-1/3">
+        <div className="flex flex-col items-center justify-center w-full mx-4 mt-6 md:w-1/3 md:mx-0 md:mt-0">
           <img
             className="w-64"
             src={security}
@@ -33,14 +33,14 @@ export function MoreTopics(props) {
           <h2 className="mt-10 text-3xl font-bold text-primary-700">
             Segurança
           </h2>
-          <p className="mt-8 text-base leading-loose text-justify text-gray-900">
+          <p className="px-4 mt-8 text-base leading-loose text-justify text-gray-900 md:px-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat.
           </p>
         </div>
-        <div className="flex flex-col items-center justify-center w-1/3 ml-16">
+        <div className="flex flex-col items-center justify-center w-full mx-4 mt-6 md:ml-16 md:w-1/3 md:mt-0">
           <img
             className="w-64"
             src={application}
@@ -50,7 +50,7 @@ export function MoreTopics(props) {
           <h2 className="mt-10 text-3xl font-bold text-primary-700">
             Serviços e Aplicações
           </h2>
-          <p className="mt-8 text-base leading-loose text-justify text-gray-900">
+          <p className="px-4 mt-8 text-base leading-loose text-justify text-gray-900 md:px-0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
