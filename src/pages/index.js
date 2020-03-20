@@ -12,7 +12,9 @@ import { useScrollPosition } from "../hooks/useScrollPos"
 import { useState } from "react"
 
 export default function Index() {
-  const [scrolled, setScroll] = useState(false)
+  const [scrolled, setScroll] = useState(
+    window ? window.pageYOffset > 100 : false
+  )
 
   useScrollPosition(({ prevPos, currPos }) => {
     setScroll(currPos.y < -100)
