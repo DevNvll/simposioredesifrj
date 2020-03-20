@@ -21,13 +21,13 @@ export function Hero(props) {
             </button>
           </div>
         </div>
-        <img
-          src={heroImage}
-          className="w-64 xl:-mr-20"
-          style={{ width: "700px" }}
-        />
+        <img src={heroImage} className="w-64 custom-map-image xl:-mr-20" />
       </div>
-      <img src={wave} className="absolute z-10 xl:top-0 " />
+      <div
+        className="absolute top-0 w-full bg-gray-900"
+        style={{ height: "60%" }}
+      />
+      <img src={wave} className="absolute z-10 custom-hero-wave xl:top-0 " />
     </div>
   )
 }

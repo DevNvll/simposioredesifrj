@@ -12,3 +12,27 @@
 body {
   font-family: "Montserrat", sans-serif;
 }
+
+.custom-hero-wave {
+  height: 105%;
+}
+
+.custom-map-image {
+  width: 700px;
+}
+
+@media (max-width: 1600px) {
+  .custom-hero-wave {
+    height: 110%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .custom-hero-wave {
+    height: 120%;
+  }
+
+  .custom-map-image {
+    margin-right: 0 !important;
+  }
+}
