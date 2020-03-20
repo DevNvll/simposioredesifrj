@@ -23,7 +23,7 @@ export function Topic({
   reversed = false,
   ...props
 }) {
-  const margin = reversed ? "md:ml-40" : "md:mr-40"
+  const margin = reversed ? "xl:ml-40" : "xl:mr-40"
   const img = getImage(image)
   return (
     <div
@@ -33,9 +33,9 @@ export function Topic({
     >
       <div
         className={cx(
-          "container flex md:flex-row flex-col items-center md:items-start justify-between items-start",
+          "container flex xl:flex-row flex-col items-center xl:items-start justify-between items-start",
           {
-            ["md:flex-row-reverse flex-col"]: reversed
+            ["xl:flex-row-reverse flex-col"]: reversed
           }
         )}
       >
@@ -45,7 +45,7 @@ export function Topic({
           alt="Topic Icon"
           style={{ width: "400px" }}
         />
-        <div className="flex flex-col items-center justify-between mx-5 mt-4 md:mt-0 md:items-start">
+        <div className="flex flex-col items-center justify-between mx-5 mt-4 xl:mt-0 xl:items-start">
           <h1
             className={cx("font-bold text-4xl", {
               ["text-primary-600"]: !reversed,
@@ -56,7 +56,7 @@ export function Topic({
           </h1>
           <p
             className={cx(
-              "mt-8 font-400 text-xl leading-loose text-center md:text-left",
+              "mt-8 font-400 text-xl leading-loose text-center xl:text-left",
               {
                 ["text-gray-900"]: !reversed,
                 ["text-gray-300"]: reversed
@@ -67,7 +67,7 @@ export function Topic({
           </p>
           <button
             className={cx(
-              "mt-8 border-solid border px-10 py-6 rounded-md text-xl text-center md:text-left",
+              "mt-8 border-solid border px-10 py-6 rounded-md text-xl text-center xl:text-left",
               {
                 ["border-secondary-400 text-secondary-400 hover:bg-secondary-400 hover:text-white"]: !reversed,
                 ["border-gray-300 text-gray-300 hover:bg-primary-400 hover:border-primary-400"]: reversed
