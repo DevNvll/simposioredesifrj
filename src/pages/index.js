@@ -8,8 +8,16 @@ import {
   Footer,
   Partner
 } from "../components"
+import { useScrollPosition } from "../hooks/useScrollPos"
+import { useState } from "react"
 
 export default function Index() {
+  const [scrolled, setScroll] = useState(false)
+
+  useScrollPosition(({ prevPos, currPos }) => {
+    setScroll(currPos.y < -100)
+  }, [])
+
   return (
     <>
       <Head>
@@ -17,7 +25,7 @@ export default function Index() {
       </Head>
       <div className="flex flex-col items-start justify-start w-full min-h-screen">
         <div className="w-full bg-white sm:h-vh">
-          <Navbar />
+          <Navbar scrolled={scrolled} landing />
           <Hero />
           <Topic
             image="iot"

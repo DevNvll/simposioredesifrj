@@ -4,30 +4,26 @@ import Link from "next/link"
 import cx from "classnames"
 import { useState } from "react"
 
-function NavItem({ href, label, mobile = false, ...props }) {
+function NavItem({ href, label, mobile = false, reversed, ...props }) {
   const router = useRouter()
   const active = router.pathname
   return !mobile ? (
-    <li
-      className={cx(
-        "xl:ml-6 xl:ml-8 text-primary-500 font-medium mt-4 md:mt-0",
-        {
-          "text-primary-700 ": active === href
-        },
-        "hover:bg-gray-800 sm:rounded p-2",
-        { "hover:bg-gray-100": mobile }
-      )}
-    >
-      <Link href={href}>
-        <a
-          className={cx({
-            "pb-2 border-solid md:border-b border-primary-500": active === href
-          })}
+    <Link href={href}>
+      <a className={cx({})}>
+        <li
+          className={cx(
+            "transition duration-200 ease-in-out xl:ml-6 xl:ml-8 text-primary-500 font-medium mt-4 md:mt-0 p-2 rounded",
+            {
+              "text-primary-700 ": active === href,
+              "hover:bg-gray-800": !reversed && !mobile,
+              "hover:bg-gray-100": reversed && !mobile
+            }
+          )}
         >
           {label}
-        </a>
-      </Link>
-    </li>
+        </li>
+      </a>
+    </Link>
   ) : (
     <Link href={href}>
       <a>
@@ -47,10 +43,18 @@ function NavItem({ href, label, mobile = false, ...props }) {
   )
 }
 
-export function Navbar({ location, ...props }) {
+export function Navbar({ location, scrolled, reverse, landing, ...props }) {
   const [menuOpen, setMenuOpen] = useState(false)
+  const reversed = scrolled || reverse || !landing
   return (
-    <header className="fixed top-0 z-50 flex justify-center w-full p-4 ">
+    <header
+      className={cx(
+        "transition duration-200 ease-in-out fixed top-0 z-50 flex justify-center w-full p-4 ",
+        {
+          "bg-white shadow": reversed
+        }
+      )}
+    >
       <nav className="container flex justify-between">
         <div className="flex items-center content-center">
           <img
@@ -62,18 +66,39 @@ export function Navbar({ location, ...props }) {
         </div>
         <div className="flex flex-col justify-center md:flex-row">
           <ul className="items-center justify-between hidden xl:flex">
-            <NavItem href="/" label="Início" />
-            <NavItem href="/programacao" label="Programação" />
-            <NavItem href="/submissoes" label="Submissões" />
-            <NavItem href="/incricoes" label="Pré-Inscrições" />
-            <NavItem href="/contato" label="Fale com a Organização" />
+            <NavItem href="/" label="Início" reversed={reversed} />
+            <NavItem
+              href="/programacao"
+              label="Programação"
+              reversed={reversed}
+            />
+            <NavItem
+              href="/submissoes"
+              label="Submissões"
+              reversed={reversed}
+            />
+            <NavItem
+              href="/incricoes"
+              label="Pré-Inscrições"
+              reversed={reversed}
+            />
+            <NavItem
+              href="/contato"
+              label="Fale com a Organização"
+              reversed={reversed}
+            />
           </ul>
           <button
             onClick={() => {
               setMenuOpen(true)
             }}
             type="button"
-            className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md xl:hidden hover:text-primary-300 hover:bg-gray-800 focus:outline-none focus:bg-gray-800 focus:text-primary-300"
+            className={cx(
+              "inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md xl:hidden",
+              !reversed
+                ? "hover:text-primary-300 hover:bg-gray-800 focus:outline-none focus:bg-gray-800 focus:text-primary-300"
+                : "hover:text-primary-300 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-primary-300"
+            )}
           >
             <svg
               className="w-6 h-6"
