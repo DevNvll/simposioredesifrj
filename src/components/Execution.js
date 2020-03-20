@@ -11,9 +11,12 @@ export function Execution() {
         <h2 className="mt-10 text-3xl font-semibold text-gray-200">
           Realização e Suporte
         </h2>
-        <div className="flex flex-col flex-wrap items-center justify-around w-full mt-10 md:flex-row">
+        <div
+          className="grid w-full grid-cols-1 gap-4 mt-10 md:grid-cols-3"
+          style={{ justifyItems: "center" }}
+        >
           <img
-            className="w-64 opacity-50 cursor-pointer hover:opacity-100"
+            className="justify-center w-64 opacity-50 cursor-pointer hover:opacity-100"
             src={coordenation}
             alt="Coordenação IFRJ"
           />
