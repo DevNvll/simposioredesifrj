@@ -4,6 +4,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      maxWidth: {
+        "img-os": "80%"
+      },
       fontFamily: {
         mono: ["Courier New", "monospace"]
       },

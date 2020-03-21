@@ -40,14 +40,14 @@ export function Topic({
         )}
       >
         <img
-          className={margin}
+          className={cx(`max-w-img-os ${margin}`)}
           src={img}
           alt="Topic Icon"
           style={{ width: "400px" }}
         />
-        <div className="flex flex-col items-center justify-between mx-5 mt-4 xl:mt-0 xl:items-start">
+        <div className="flex flex-col items-center justify-between mx-5 mt-4 md:mt-0 xl:items-start">
           <h1
-            className={cx("font-bold text-4xl", {
+            className={cx("font-bold text-4xl mt-4 md:mt-0", {
               ["text-primary-600"]: !reversed,
               ["text-gray-300"]: reversed
             })}
@@ -56,7 +56,7 @@ export function Topic({
           </h1>
           <p
             className={cx(
-              "mt-8 font-400 text-xl leading-loose text-center xl:text-left",
+              "mt-8 font-400 text-base md:text-xl leading-loose text-center xl:text-left",
               {
                 ["text-gray-900"]: !reversed,
                 ["text-gray-300"]: reversed
