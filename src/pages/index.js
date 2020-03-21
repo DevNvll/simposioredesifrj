@@ -26,6 +26,7 @@ export default function Index() {
     <>
       <Head>
         <title>1º Simpósio de Redes da Região dos Lagos</title>
+        <meta description="1º Simpósio de Redes de computadores realizado no IFRJ Campus Arraial do Cabo Região dos Lagos" />
       </Head>
       <div className="flex flex-col items-start justify-start w-full min-h-screen">
         <div className="w-full bg-white sm:h-vh">

@@ -41,6 +41,7 @@ export function Hero(props) {
         src={wave}
         className="absolute z-10 custom-hero-wave xl:top-0 "
         ariaHidden
+        alt="Ondulação"
       />
     </div>
   )

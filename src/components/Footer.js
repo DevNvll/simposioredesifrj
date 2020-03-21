@@ -129,6 +129,7 @@ export function Footer() {
           <p className="mt-5 mb-3 text-sm text-gray-400 md:mb-0 md:mt-0 md:text-base">
             Desenvolvido por{" "}
             <a
+              rel="noreferrer"
               className="font-bold text-gray-400 underline hover:text-primary-400"
               href="https://github.com/DevNvll"
               target="_blank"
@@ -137,6 +138,7 @@ export function Footer() {
             </a>{" "}
             e{" "}
             <a
+              rel="noreferrer"
               className="font-bold text-gray-400 underline hover:text-primary-400"
               href="https://davibrancol.com.br"
               target="_blank"

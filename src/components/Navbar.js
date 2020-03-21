@@ -92,6 +92,7 @@ export function Navbar({ location, scrolled, reverse, landing, ...props }) {
             onClick={() => {
               setMenuOpen(true)
             }}
+            ariaLabel="Abrir Menu"
             type="button"
             className={cx(
               "inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md xl:hidden",
@@ -129,6 +130,7 @@ export function Navbar({ location, scrolled, reverse, landing, ...props }) {
               onClick={() => {
                 setMenuOpen(false)
               }}
+              ariaLabel="Fechar"
               type="button"
               className="inline-flex items-center justify-center p-2 text-gray-400 transition duration-150 ease-in-out rounded-md hover:text-primary-300 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-primary-300"
             >
