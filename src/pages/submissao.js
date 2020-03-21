@@ -7,15 +7,11 @@ export default function Submissao() {
       <Head>
         <title>Submissões - 1º Simpósio de Redes da Região dos Lagos</title>
       </Head>
-      <div className="min-h-screen" style={{ paddingTop: "100px" }}>
+      <div className="min-h-screen" style={{ paddingTop: "80px" }}>
         <Navbar />
         <Subtitle
-          title="Programação"
-          description="1º Simpósio de Redes da Região dos Lagos acontecerá durante os dias 08
-          e 09 de outubro de 2020. Sua programação acontecerá ao longo dos dois
-          dias, iniciando às 08:00 e finalizando às 22:00, com diversas
-          atividades durante todo o período. Em breve a programação estará sendo
-          montada e divulgada."
+          title="Submissões"
+          description="O 1º Simpósio de Redes da Região dos Lagos estará recebendo submissões de trabalhos relacionados à área do evento. Pesquisadores, estudantes e profissionais da área poderão submeter trabalhos nas seguintes formas:"
         />
         <Footer />
       </div>

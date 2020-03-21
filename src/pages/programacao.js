@@ -7,7 +7,7 @@ export default function Programacao() {
       <Head>
         <title>Programação - 1º Simpósio de Redes da Região dos Lagos</title>
       </Head>
-      <div className="min-h-screen" style={{ paddingTop: "90px" }}>
+      <div className="min-h-screen" style={{ paddingTop: "80px" }}>
         <Navbar />
         <Subtitle
           title="Programação"
