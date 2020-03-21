@@ -1,4 +1,5 @@
 import logo from "../assets/img/logo-ifrj.png"
+import logoClean from "../assets/img/logo/ifrj-clean.png"
 import { useRouter } from "next/router"
 import Link from "next/link"
 import cx from "classnames"
@@ -57,12 +58,7 @@ export function Navbar({ location, scrolled, reverse, landing, ...props }) {
     >
       <nav className="container flex justify-between">
         <div className="flex items-center content-center">
-          <img
-            className="object-cover object-left h-16"
-            src={logo}
-            alt="Logo Instituto Federal"
-            style={{ width: "45px" }}
-          />
+          <img className="h-12" src={logoClean} alt="Logo Instituto Federal" />
         </div>
         <div className="flex flex-col justify-center md:flex-row">
           <ul className="items-center justify-between hidden xl:flex">
@@ -124,7 +120,7 @@ export function Navbar({ location, scrolled, reverse, landing, ...props }) {
       >
         <div className="flex flex-col w-full h-auto bg-white rounded-lg shadow-lg">
           <div className="flex items-center justify-between px-5 pt-4 ">
-            <img className="h-8" src={logo} alt="Logo Instituto Federal" />
+            <img className="h-8" src={logoClean} alt="Logo Instituto Federal" />
 
             <button
               onClick={() => {
