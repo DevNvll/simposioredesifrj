@@ -14,13 +14,13 @@ export function Hero(props) {
           </h2>
           <div className="flex flex-col justify-center mt-8 xl:flex-row xl:mt-12 xl:justify-start">
             <button
-              ariaLabel="Inscreva-se"
+              aria-label="Inscreva-se"
               className="px-6 py-4 font-bold text-white transition duration-200 ease-in-out rounded shadow bg-primary-400 hover:bg-primary-300"
             >
               Inscreva-se
             </button>
             <button
-              ariaLabel="Informações para Submissões"
+              aria-label="Informações para Submissões"
               className="px-6 py-4 ml-4 font-bold transition duration-200 ease-in-out bg-transparent rounded text-primary-400 hover:text-primary-300 "
             >
               Informações para Submissões
