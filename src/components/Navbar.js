@@ -29,11 +29,11 @@ function NavItem({ href, label, mobile = false, reversed, ...props }) {
       <a>
         <li
           className={cx(
-            "xl:ml-6 text-gray-900 font-medium mt-4 md:mt-0 mb-2",
+            "xl:ml-6 text-gray-900 font-medium mt-4 md:mt-0 mb-2 rounded",
             {
               "text-primary-700 bg-gray-100 ": active === href
             },
-            "hover:bg-gray-100 sm:rounded p-2"
+            "hover:bg-gray-100 p-2"
           )}
         >
           {label}
