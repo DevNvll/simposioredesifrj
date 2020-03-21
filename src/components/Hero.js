@@ -33,10 +33,15 @@ export function Hero(props) {
           alt="Mundo conectado"
         />
       </div>
+
       <div
         className="absolute top-0 w-full bg-gray-900"
         style={{ height: "60%" }}
       />
+      <i
+        class="xl:hidden fas fa-chevron-down z-50 text-gray-400 text-4xl absolute bottom-0 mb-8"
+        style={{ animation: "bounce 2s infinite" }}
+      ></i>
       <img
         src={wave}
         className="absolute z-10 custom-hero-wave xl:top-0 "
