@@ -3,7 +3,7 @@ import wave from "../assets/wave.svg"
 
 export function Hero(props) {
   return (
-    <div className="relative flex flex-col-reverse items-center justify-center min-h-screen pt-5 pb-16 bg-gray-900 xl:bg-white xl:flex-row xl:min-h-0 xl:pt-20">
+    <div className="relative flex flex-col-reverse items-center justify-center min-h-screen pt-5 pb-10 bg-gray-900 xl:bg-white xl:flex-row xl:min-h-0 xl:pt-20">
       <div className="container relative z-20 flex flex-col-reverse items-center justify-between xl:flex-row">
         <div className="flex flex-col items-center w-full px-4 text-center xl:items-start xl:w-auto xl:px-0 xl:text-left">
           <h1 className="w-full text-3xl font-bold text-gray-300 xl:text-4xl xl:w-4/5">
