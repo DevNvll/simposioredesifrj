@@ -105,7 +105,7 @@ export function Footer() {
             <i className="p-4 mr-4 bg-white rounded-full fa fa-envelope text-primary-700" />
             <p className="text-base text-gray-400">redes.cac@ifrj.edu.br</p>
           </div>
-          <h3 className="w-full mt-10 text-xl font-bold text-center text-white md:text-left md:mt-0 md:w-auto">
+          <h3 className="w-full mt-10 text-xl font-bold text-center text-white md:text-left md:mt-10 md:w-auto">
             Nossas Mídias
           </h3>
           <div className="flex items-center justify-center w-full mt-3 md:justify-between">

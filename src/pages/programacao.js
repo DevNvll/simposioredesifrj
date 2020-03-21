@@ -18,8 +18,8 @@ export default function Programacao() {
           montada e divulgada."
         />
         <div className="flex items-center justify-center w-full pt-20 pb-20">
-          <div className="container flex items-center justify-between">
-            <div className="p-4 border border-gray-400 border-solid rounded-lg">
+          <div className="container flex flex-wrap items-center justify-between md:flex-no-wrap">
+            <div className="p-4 border border-gray-400 border-none rounded-lg md:border-solid">
               <table className="rounded-lg">
                 <thead>
                   <th
@@ -91,7 +91,7 @@ export default function Programacao() {
                 </tbody>
               </table>
             </div>
-            <div className="p-4 border border-gray-400 border-solid rounded-lg">
+            <div className="p-4 border border-gray-400 border-none rounded-lg md:border-solid">
               <table className="rounded-lg">
                 <thead>
                   <th
