@@ -126,7 +126,7 @@ export function Footer() {
           <p className="mt-3 text-sm text-gray-400 md:mt-0 md:text-base">
             2020 © Copyright - All Rights Reserved
           </p>
-          <p className="mt-5 mb-3 text-sm text-gray-400 md:mb-3 md:mt-0 md:text-base">
+          <p className="mt-5 mb-3 text-sm text-gray-400 md:mb-0 md:mt-0 md:text-base">
             Desenvolvido por{" "}
             <a
               className="font-bold text-gray-400 underline hover:text-primary-400"
