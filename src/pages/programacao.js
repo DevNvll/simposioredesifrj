@@ -23,7 +23,7 @@ export default function Programacao() {
               <table className="rounded-lg">
                 <thead>
                   <th
-                    colspan="4"
+                    colSpan="4"
                     className="px-4 py-2 text-3xl font-bold text-white bg-gray-800 rounded-t-lg border-3"
                   >
                     08 de Outubro

@@ -13,21 +13,35 @@ export function Hero(props) {
             8 e 9 de Outubro no IFRJ Campus Arraial do Cabo
           </h2>
           <div className="flex flex-col justify-center mt-8 xl:flex-row xl:mt-12 xl:justify-start">
-            <button className="px-6 py-4 font-bold text-white transition duration-200 ease-in-out rounded shadow bg-primary-400 hover:bg-primary-300">
+            <button
+              ariaLabel="Inscreva-se"
+              className="px-6 py-4 font-bold text-white transition duration-200 ease-in-out rounded shadow bg-primary-400 hover:bg-primary-300"
+            >
               Inscreva-se
             </button>
-            <button className="px-6 py-4 ml-4 font-bold transition duration-200 ease-in-out bg-transparent rounded text-primary-400 hover:text-primary-300 ">
+            <button
+              ariaLabel="Informações para Submissões"
+              className="px-6 py-4 ml-4 font-bold transition duration-200 ease-in-out bg-transparent rounded text-primary-400 hover:text-primary-300 "
+            >
               Informações para Submissões
             </button>
           </div>
         </div>
-        <img src={heroImage} className="w-64 custom-map-image xl:-mr-20" />
+        <img
+          src={heroImage}
+          className="w-64 custom-map-image xl:-mr-20"
+          alt="Mundo conectado"
+        />
       </div>
       <div
         className="absolute top-0 w-full bg-gray-900"
         style={{ height: "60%" }}
       />
-      <img src={wave} className="absolute z-10 custom-hero-wave xl:top-0 " />
+      <img
+        src={wave}
+        className="absolute z-10 custom-hero-wave xl:top-0 "
+        ariaHidden
+      />
     </div>
   )
 }
