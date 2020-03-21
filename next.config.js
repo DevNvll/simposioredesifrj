@@ -1,7 +1,8 @@
 const path = require("path")
 const withImages = require("next-images")
+const optimizedImages = require("next-optimized-images")
 
-module.exports = withImages({
+module.exports = optimizedImages({
   webpack(config, options) {
     config.resolve.alias["components"] = path.join(
       __dirname,
