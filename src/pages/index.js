@@ -35,12 +35,12 @@ export default function Index() {
           <Topic
             image="iot"
             title="Internet das Coisas"
-            description="Desde seus móveis eletromésticos, até lampadas e máquinas de lavar, todos estão conectados nessa grande rede."
+            description='Hoje nossas coisas estão conectadas, e ficarão ainda mais! Vamos entender melhor os impactos do "iot" em nossas vidas.'
           />
           <Topic
             image="ethernet"
             title="Infraestrutura de Redes"
-            description="Evento focado na contextualização da importância e funções da Infraestrutura das redes de computadores."
+            description="Entenda melhor o impacto da conexão e suporte acerca dos equipamentos da rede de uma empresa ou conjunto residencial."
             reversed
           />
 
