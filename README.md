@@ -14,6 +14,6 @@
 ## Lighthouse Report
 ![Lighhouse](./.github/screenshots/lighthouse.png)
 
-## Desenvolvidores
+## Desenvolvedores
 - [Henrick Mello](https://github.com/DevNvll)
 - [Davi Brancol](https://davibrancol.com.br)
